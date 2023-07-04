@@ -1,0 +1,98 @@
+.main-header{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.main-header > .logo-header{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
+    gap: 0.8em;
+}
+
+.logo-header > h4{
+    font-size: 2.2rem;
+    background: linear-gradient(to right, #008000, #70e000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+.main-header > .searchbar-header{
+    display: flex;
+    width: 100%;
+    padding: 0 1em;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.searchbar-header > .search-location {
+    /* border: 1px solid #008000; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px 1.4em;
+}
+
+.searchbar-header > .vertical-bar{
+    width: 0rem;
+    height: 1.3rem;
+    border: 0.05rem solid rgb(207, 207, 207)
+}
+
+.searchbar-header > .query-search {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px 1.4em;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+.main-header > .userhandle-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4em;
+    padding: 0 2em;
+}
+
+.userhandle-header > .cart-header{
+    font-size: 1.5rem;
+}
+
+.userhandle-header > .user-access{
+    font-size: 1.2rem;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    align-items:center;
+    gap: 0.3em;
+    background: #fff;
+    border-radius: 21px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px 15px;
+}
+
+
