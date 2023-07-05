@@ -1,26 +1,25 @@
 .main-header{
-    /* border: 1px solid red; */
-    width: 100%;
+    width: 100vw;
     height: min-content;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 1rem;
+    overflow: hidden;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+    justify-items: center;
 }
 
 .main-header > .logo-header{
     display: flex;
-    width: 100%;
-    /* border: 1px solid blue; */
     justify-content: flex-end;
+    width: 100%;
     align-items: center;
     padding-right: 1em;
     gap: 0.8em;
 }
 
 .logo-header > h4{
-    font-size: 2.2rem;
+    font-size: 2rem;
     background: linear-gradient(to right, #008000, #70e000);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -32,37 +31,59 @@
 
 .main-header > .searchbar-header{
     display: flex;
-    width: 100%;
-    padding: 0 1em;
-    justify-content: center;
+    width: 90%;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
     align-items: center;
     background: #fff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgb(207, 207, 207);
     border-radius: 5px;
-    border: 1px solid red;
 }
 
 .searchbar-header > .search-location {
-    /* border: 1px solid #008000; */
-    width: 35%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0 5px 1.4em;
+}
+
+#locationDot{
+    padding: 0 5px;
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
+
+.location-header, .query-field{
+    width: 100%;
+    height: 2em;
+    font-size: 1rem;
+    padding: 0 0.2rem;
+    outline: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#darrow{
+    padding-left: 0.4rem;
 }
 
 .searchbar-header > .vertical-bar{
     width: 0rem;
     height: 1.3rem;
-    border: 0.05rem solid rgb(207, 207, 207)
+    border: 0.05rem solid rgb(207, 207, 207);
+    margin: 8px;
 }
 
 .searchbar-header > .query-search {
-    width: 55%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0 5px 1.4em;
+}
+
+#query-icon{
+    padding: 0 4px;
+    font-size: 1.2rem;
 }
 
 
@@ -70,11 +91,12 @@
 
 
 .main-header > .userhandle-header{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 4em;
-    padding: 0 2em;
+    gap: 2em;
+    padding: 0 0.5em;
 }
 
 .userhandle-header > .cart-header{
@@ -82,7 +104,7 @@
 }
 
 .userhandle-header > .user-access{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     width: max-content;
     height: max-content;

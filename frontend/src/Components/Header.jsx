@@ -15,14 +15,14 @@ const Header = () => {
         {/* Searchbar Section */}
         <div className="searchbar-header">
           <div className="search-location">
-            <FontAwesomeIcon icon={faLocationDot} style={{color: "#ce1212",}} />
-            <input type="text" />
-            <FontAwesomeIcon icon={faCaretDown} style={{color: "#39d05f",}} />
+            <FontAwesomeIcon icon={faLocationDot} style={{color: "#ce1212",}} id='locationDot'/>
+            <input type="text" placeholder='Enter your location' className='location-header'/>
+            <FontAwesomeIcon icon={faCaretDown} style={{color: "#39d05f",}} id='darrow'/>
           </div>
           <div className="vertical-bar"></div>
           <div className="query-search">
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#36ce64",}} />
-            <input type='text' />
+            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#36ce64",}} id='query-icon'/>
+            <input type='text' placeholder='Search for retail or product name' className='query-field'/>
           </div>
         </div>
 
