@@ -34,6 +34,12 @@ const Header = () => {
           <div className="user-access">
             <FontAwesomeIcon icon={faCircleUser} style={{color: "#4fabb5",}} />
             <FontAwesomeIcon icon={faBars} style={{color: "#4fabb5",}} />
+            <ul className="user-headerlist">
+              <li className="item-header">Sign up</li>
+              <li className="item-header">Log in</li>
+              <hr />
+              <li className="item-header">Register Retail</li>
+            </ul>
           </div>
         </div>
     </header>
